@@ -6,10 +6,24 @@
         <title>Photo App Higher</title>
         <meta name="description" content="Higher photo app to display gallery">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/e1f1ebe907.js"></script>
     <link href="main.css" rel="stylesheet"></head>
     <body>
-        
-        
-        <script src="../src/js/index.js" async defer></script>
+        <div class="title">
+            <h1 class="title__headline">Photo Gallery App</h1>
+        </div>
+        <div class="container">
+            <div class="gallery">
+                <button class="gallery__btn gallery__btn--left"><i class="fas fa-angle-left"></i></button>
+                <div class="gallery__collection">
+                    <div class="gallery__collection__image gallery_collection__image--1"></div>
+                    <div class="gallery__collection__image gallery_collection__image--2"></div>
+                    <div class="gallery__collection__image gallery_collection__image--3"></div>
+                </div>
+                <button class="gallery__btn gallery__btn--right"><i class="fas fa-angle-right"></i></button>
+            </div>
+            <div class="pageNumber"></div>
+        </div>
     <script type="text/javascript" src="main.js"></script></body>
 </html>

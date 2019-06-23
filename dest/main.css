@@ -1,7 +1,88 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
 body {
-  min-height: 100vh;
-  display: flex;
-  padding-top: 5vh;
-  justify-content: center;
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html {
+  font-family: 'Montserrat', sans-serif; }
+
+.title {
+  font-size: 3rem; }
+
+.gallery__btn {
+  font-size: 2rem; }
+
+.pageNumber {
+  font-size: 1.5rem; }
+
+@media screen and (max-width: 600px) {
+  .title {
+    font-size: 2rem; } }
+
+.title {
+  width: 100%;
+  text-align: center;
+  padding: 3vw 0; }
+
+@media screen and (min-width: 1200px) {
+  .gallery__btn {
+    cursor: pointer; } }
+
+.container {
+  width: 100%;
+  height: 50vh; }
+  .container .gallery {
+    height: 100%;
+    display: flex;
+    width: 100%; }
+    .container .gallery__collection {
+      height: 100%;
+      display: flex;
+      width: 100%;
+      max-width: 96vw; }
+      .container .gallery__collection__image {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        flex-basis: 100%;
+        height: auto; }
+
+.pageNumber {
+  text-align: center;
+  height: 5vh; }
+
+body {
+  height: 100vh;
   background-color: #9c9c9c; }
+
+.hidden {
+  visibility: hidden; }
 
